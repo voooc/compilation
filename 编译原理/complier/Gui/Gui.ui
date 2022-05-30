@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>536</width>
+    <height>450</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="0" column="0" rowspan="2">
+     <widget class="QTextEdit" name="textEdit"/>
+    </item>
+    <item row="0" column="1">
+     <widget class="QTextBrowser" name="textBrowser"/>
+    </item>
+    <item row="1" column="1">
+     <widget class="QTextBrowser" name="textBrowser_2"/>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>536</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menu_F">
+    <property name="title">
+     <string>文件(F)</string>
+    </property>
+    <addaction name="actiona"/>
+   </widget>
+   <widget class="QMenu" name="menu_W">
+    <property name="title">
+     <string>词法分析(W)</string>
+    </property>
+    <addaction name="actions_2"/>
+    <addaction name="actionb"/>
+    <addaction name="actionh"/>
+   </widget>
+   <widget class="QMenu" name="menu_P">
+    <property name="title">
+     <string>语法分析(P)</string>
+    </property>
+    <widget class="QMenu" name="menu">
+     <property name="title">
+      <string>手动输入文法</string>
+     </property>
+     <addaction name="actiona_3"/>
+     <addaction name="actiong"/>
+     <addaction name="actionf"/>
+    </widget>
+    <widget class="QMenu" name="menu_2">
+     <property name="title">
+      <string>代码分析</string>
+     </property>
+     <addaction name="actiona_4"/>
+     <addaction name="actionb_4"/>
+    </widget>
+    <addaction name="menu"/>
+    <addaction name="menu_2"/>
+   </widget>
+   <widget class="QMenu" name="menu_M">
+    <property name="title">
+     <string>中间代码(M)</string>
+    </property>
+    <addaction name="actiona_5"/>
+   </widget>
+   <widget class="QMenu" name="menu_O">
+    <property name="title">
+     <string>目标代码生成(O)</string>
+    </property>
+    <addaction name="actiond"/>
+   </widget>
+   <addaction name="menu_F"/>
+   <addaction name="menu_W"/>
+   <addaction name="menu_P"/>
+   <addaction name="menu_M"/>
+   <addaction name="menu_O"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionhelp">
+   <property name="text">
+    <string>帮助</string>
+   </property>
+  </action>
+  <action name="actionComplier_A">
+   <property name="text">
+    <string>关于Complier(A)</string>
+   </property>
+   <property name="toolTip">
+    <string>Complier(A)</string>
+   </property>
+  </action>
+  <action name="actiona">
+   <property name="text">
+    <string>打开文件</string>
+   </property>
+  </action>
+  <action name="actions_2">
+   <property name="text">
+    <string>手动词法分析</string>
+   </property>
+  </action>
+  <action name="actions_3">
+   <property name="text">
+    <string>语义分析</string>
+   </property>
+  </action>
+  <action name="actionb">
+   <property name="text">
+    <string>自动词法分析</string>
+   </property>
+  </action>
+  <action name="actions_5">
+   <property name="text">
+    <string>Regular-&gt;NFA</string>
+   </property>
+  </action>
+  <action name="actionb_2">
+   <property name="text">
+    <string>NFA-&gt;DFA</string>
+   </property>
+  </action>
+  <action name="actionc">
+   <property name="text">
+    <string>DFA-&gt;MDFA</string>
+   </property>
+  </action>
+  <action name="actionh">
+   <property name="text">
+    <string>核心算法</string>
+   </property>
+  </action>
+  <action name="actionc_2">
+   <property name="text">
+    <string>c</string>
+   </property>
+  </action>
+  <action name="actiona_2">
+   <property name="text">
+    <string>z</string>
+   </property>
+  </action>
+  <action name="actionx">
+   <property name="text">
+    <string>x</string>
+   </property>
+  </action>
+  <action name="actiona_3">
+   <property name="text">
+    <string>递归下降</string>
+   </property>
+  </action>
+  <action name="actiong">
+   <property name="text">
+    <string>预测分析</string>
+   </property>
+  </action>
+  <action name="actionf">
+   <property name="text">
+    <string>算符优先</string>
+   </property>
+  </action>
+  <action name="actions_4">
+   <property name="text">
+    <string>LR分析</string>
+   </property>
+  </action>
+  <action name="actiona_4">
+   <property name="text">
+    <string>递归下降</string>
+   </property>
+  </action>
+  <action name="actionb_4">
+   <property name="text">
+    <string>预测分析</string>
+   </property>
+  </action>
+  <action name="actionc_3">
+   <property name="text">
+    <string>算符优先</string>
+   </property>
+  </action>
+  <action name="actiond_2">
+   <property name="text">
+    <string>LR分析</string>
+   </property>
+  </action>
+  <action name="actiond">
+   <property name="text">
+    <string>目标代码</string>
+   </property>
+  </action>
+  <action name="actiona_5">
+   <property name="text">
+    <string>中间代码</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

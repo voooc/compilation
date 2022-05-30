@@ -1,0 +1,7 @@
+;实例6调用的宏库文件
+OUTPUT  MACRO  X
+  LEA DX,X
+  MOV AH,9
+  INT 21H
+  ENDM
+
